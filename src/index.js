@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/index.css';
+import {Route,Switch,BrowserRouter,Redirect} from "react-router-dom";
+//import Home from './Home';
+import Login from './Login';
+import Senha from './Senha';
+import Cadastro from './Cadastro';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/senha" component={Senha} />
+        <Route path="/cadastro" component={Cadastro} />
+        
+        <Redirect path="/" to="/login"/>
+      </Switch>
+    </ BrowserRouter>,
   document.getElementById('root')
 );
 
