@@ -1,24 +1,49 @@
-import logo from "./logo.svg";
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+/*  import Routes from './Routes';*/ /*         
+import { Link} from 'react-router-dom';*/
+/*  import Routes from './Routes';*/ /*         
+/* import './index.js';        
+
+<Routes />
+*/
+
+
+/* import a1 from './a1.jpg'; */
+
+
 
 function App() {
   return (
-    <div class="container">
-      <div className="container__login">
-        <img class="logo" src={logo} alt="Logo" />
-        <input class="input" type="email" placeholder="Email" />
-        <input class="input" type="password" placeholder="Senha" />
-        <button class="button button--success" type="submit">
+   
+   <div class="container " >
+
+
+    <div className="container_login logo"  >
+    
+    
+     <img  class="container logo" src={logo} alt='logo' />
+     
+    
+
+     <input class="input" type="Email" />
+     <br></br>
+    <input  class='input'  type="password"/> 
+      <form>
+        <button class="tamanho" >
           Entrar
-        </button>
-        <a class="link" href="">
-          Esqueceu sua senha?
-        </a>
-        <a class="link" href="">
-          Deseja se cadastrar?
-        </a>
-      </div>
+          </button>
+      </form>
+ <a   href="./Recuperarsenha">Recuperar senha</a><br></br>
+<a href="Recuperarsenha.js">Registrar-se</a> 
+
+
     </div>
+      </div>
+
+
+
   );
 }
 
